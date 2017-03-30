@@ -1,0 +1,119 @@
+body {
+    font-family: Arial;
+    background-color: #9AD1D4;
+    margin:0;
+    padding: 0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    border: 3px solid black;
+    background: #125E8A;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.contenedor{
+    margin: 0 auto;
+    width: 80%;
+}
+.opciones{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}.botones{
+    margin-top: 80px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.input-login {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+
+}
+.oculto{
+    display:none;
+}
+.mostrar{
+    display:block;
+}
+.login {
+    margin: 20px auto;
+    width: 300px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px
+}
+.titulo {
+    text-align: center;
+    color: #777;
+}
+.login-form {
+    text-align: center;
+}
+.grupo {
+    margin-bottom: 10px;
+}
+.boton {
+    border: 2px solid transparent;
+    background: #C1666B;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.boton:hover {
+    background-color: #D1495B;
+}
+.boton-cerrar{
+    width: 140px;
+}
+.boton-opciones{
+    margin-bottom: 10px;
+    width: 140px;
+    background: #A54657;
+}
+/*tablas*/
+.tabla {
+    border-collapse: collapse;
+   
+    background: white;
+    margin-bottom: 80px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #2F4858;
+    color: white;
+}
+.relaciones{
+    display: flex;
+    flex-wrap: wrap;
+}
+.listaVehiculos{
+    width: 300px;
+}

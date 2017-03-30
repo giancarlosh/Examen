@@ -1,0 +1,81 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="validar"
+                class="ClasesControlador.Login"
+                method="validar">
+            
+            <result name="success">/Vistas/opciones.jsp</result>
+            <result name=" ">/Vistas/index.jsp</result>
+            
+        </action >
+        <action name="cerrar">
+            <result >/Vistas/index.jsp</result>
+        </action>
+        <action name="volver">
+            <result >/Vistas/opciones.jsp</result>
+        </action>
+        <action name="prueba">
+            <result >/Vistas/prueba.jsp</result>
+        </action>
+        
+        <action name="mostrarRegistro">     
+            <result>/Vistas/mostrar.jsp</result>
+        </action>
+        <action name="agregarCliente">     
+            <result>/Vistas/nuevoCliente.jsp</result>
+        </action>
+        <action name="agregarVehiculo">     
+            <result>/Vistas/nuevoVehiculo.jsp</result>
+        </action>
+        <action name="agregarMecanico">     
+            <result>/Vistas/nuevoMecanico.jsp</result>
+        </action>
+        <action name="relaciones">     
+            <result>/Vistas/gestionarVehiculo.jsp</result>
+        </action>
+        
+        <action name="nuevoCliente"
+                class="ClasesControlador.Cliente"
+                method="nuevo">
+            <result name="success">/Vistas/nuevoCliente.jsp</result>
+        </action>
+        <action name="nuevoVehiculo"
+                class="ClasesControlador.Vehiculo"
+                method="nuevo">
+            <result name="success">/Vistas/nuevoVehiculo.jsp</result>
+        </action>
+        <action name="nuevoMecanico"
+                class="ClasesControlador.Mecanico"
+                method="nuevo">
+            <result name="success">/Vistas/nuevoMecanico.jsp</result>
+        </action>
+        
+        
+        <action name="eliminarCliente"
+                class="ClasesControlador.Cliente"
+                method="eliminar">
+            <result name="success">/Vistas/opciones.jsp</result>
+        </action>
+        <action name="eliminarVehiculo"
+                class="ClasesControlador.Vehiculo"
+                method="eliminar">
+            <result name="success">/Vistas/opciones.jsp</result>
+        </action>
+        <action name="eliminarMecanico"
+                class="ClasesControlador.Mecanico"
+                method="eliminar">
+            <result name="success">/Vistas/opciones.jsp</result>
+        </action>
+        <action name="buscarCliente"
+                class="ClasesControlador.Cliente"
+                method="buscar">
+            <result name="success"> </result>
+        </action>
+    </package>
+</struts>
